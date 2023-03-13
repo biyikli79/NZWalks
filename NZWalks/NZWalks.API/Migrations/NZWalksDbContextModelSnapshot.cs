@@ -45,9 +45,8 @@ namespace NZWalks.API.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Population")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<long>("Population")
+                        .HasColumnType("bigint");
 
                     b.HasKey("Id");
 
